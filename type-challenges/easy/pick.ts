@@ -1,5 +1,8 @@
-// 题目：实现 TS 内置的 Pick<T, K>，但不可以使用它。
-// 从类型 T 中选择出属性 K，构造成一个新的类型。
+/*
+ * 题目：
+ * 实现 TS 内置的 Pick<T, K>，但不可以使用它。
+ * 从类型 T 中选择出属性 K，构造成一个新的类型。
+*/
 
 /* ts 写法 */
 type MyPick<T extends any, K extends keyof T> = {

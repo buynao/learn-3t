@@ -1,3 +1,10 @@
+/*
+ * 题目：
+ * 判断两个类型是否一致
+ * 
+*/
+
+
 type IsEqual<A, B> = (<T>() => T extends A ? true : false) extends (<T>() => T extends B ? true : false)
     ? true : false;
 
