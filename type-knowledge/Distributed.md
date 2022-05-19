@@ -13,12 +13,12 @@
     通常，分布式条件是正常所需要的行为。为了避免这种行为，可以用方括号将 extends 关键字的两边括起来。
 
 ```typescript
-  type ToArrayNonDist<Type> = [Type] extends [any] ? Type[] : never;
-  
-  // 'StrArrOrNumArr' is no longer a union.
-  type StrArrOrNumArr = ToArrayNonDist<string | number>;
-            
-  type StrArrOrNumArr = (string | number)[]
+type ToArrayNonDist<Type> = [Type] extends [any] ? Type[] : never;
+
+// 'StrArrOrNumArr' is no longer a union.
+type StrArrOrNumArr = ToArrayNonDist<string | number>;
+          
+type StrArrOrNumArr = (string | number)[]
 ```
 
 这段描述来自分布式条件类型的一文中的最后一句话，所以确实很容易被人忽略。
