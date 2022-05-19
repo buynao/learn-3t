@@ -10,6 +10,6 @@ interface Todo {
   completed: boolean
 }
 type MyOmit<T extends object, K extends keyof T> = {
-  [P in Exclude<keyof T, K>]: T[P];
+  [P in MyExclude<keyof T, K>]: T[P];
 }
 type TodoPreview = MyOmit<Todo, 'description' | 'title'>
