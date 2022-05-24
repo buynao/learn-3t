@@ -37,3 +37,7 @@
 [isUnion.ts](./midium/isUnion.ts)
 
 [omit.ts](./midium/omit.ts)
+
+[readonly.ts](./midium/readonly.ts)
+
+[deepReadonly.ts](./midium/deepReadonly.ts)
